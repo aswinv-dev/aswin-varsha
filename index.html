@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aswin & Varsha – Nichayathartham</title>
+<title>Aswin &amp; Varsha – Nichayathartham</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500;700&family=Noto+Serif+Tamil:wght@400;700&display=swap">
 <style>
 :root{--bg:#74875a;--card:#869a6c;--tx:#fffaf0;--ac:#f6e0a0;--gr:#ebd083;--ln:#c9a64f;--cream:#f7efd9;--mar:#7a2430}
@@ -16,38 +16,53 @@ body.ta .en,body.en .ta{display:none}
 .bar{display:flex;justify-content:flex-end;gap:8px}
 button,.btn{font:inherit;font-size:.85em;background:var(--card);color:var(--tx);border:1px solid var(--ln);border-radius:999px;padding:6px 16px;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
 .btn.p{background:var(--ac);color:var(--bg);border-color:var(--ac)}
-.border{border:3px double var(--gr);border-radius:14px;padding:26px 16px;margin-top:12px;background:var(--card);box-shadow:0 10px 30px rgba(0,0,0,.3);position:relative}
-.border::before{content:"";display:block;height:30px;margin:-8px 0 8px;background:radial-gradient(circle at 7px 8px,#fff8e8 5px,transparent 6px) 0 0/24px 30px repeat-x}
+.border{border:3px double var(--gr);border-radius:14px;padding:26px 24px;margin-top:12px;background:var(--card);box-shadow:0 10px 30px rgba(0,0,0,.3);position:relative;text-align:center}
 .om{color:var(--ac);font-weight:700;letter-spacing:.06em}
-.arch{width:190px;margin:10px auto;border:3px double var(--gr);border-radius:95px 95px 10px 10px;overflow:hidden;background:#000;box-shadow:0 0 0 5px var(--card),0 0 0 7px var(--ln)}
-.arch img{display:block;width:100%;height:auto}
+.arch{width:190px;height:220px;margin:14px auto;border:3px double var(--gr);border-radius:95px 95px 10px 10px;overflow:hidden;background:#29351f;box-shadow:0 0 0 5px var(--card),0 0 0 7px var(--ln)}
+.arch svg{display:block;width:100%;height:100%}
 .sm{font-size:.8em;opacity:.85;letter-spacing:.05em}
 h1{color:var(--ac);font:400 3.2em/1.2 "Great Vibes",cursive;margin:.4em 0 .6em;text-align:center}
 h1 span{display:block}
 h1 span.en{font-family:"Cormorant Garamond",serif;font-weight:700;letter-spacing:.08em;line-height:1.3;text-transform:uppercase;font-size:.42em}
 h1 span.ta{font-family:"Noto Serif Tamil",serif;font-weight:700;line-height:1.7;font-size:.36em}
-.names{display:block;margin-top:4px;font-family:"Cormorant Garamond","Noto Serif Tamil",serif;letter-spacing:.08em;font-size:.8em;color:var(--cream)}
+.names{display:block;margin-top:8px;font-family:"Cormorant Garamond","Noto Serif Tamil",serif;letter-spacing:.08em;font-size:.8em;color:var(--cream)}
 .names small{font-size:.7em;vertical-align:middle;letter-spacing:.15em}
 .cap{font-weight:400;font-size:1.4em;line-height:0}
-h2{color:var(--ac);font-size:1.4em;margin:1.6em 0 .4em;border-bottom:1px solid var(--ln);padding-bottom:.2em}
+h2{color:var(--ac);font-size:1.4em;margin:1.6em 0 .4em;border-bottom:1px solid var(--ln);padding-bottom:.2em;text-align:left}
 .tl{color:var(--ac);font-size:1.7em;line-height:1.5}
 .acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px}
 .invite{margin:1.2em 0 1.4em;text-align:center;font-size:1.3em;line-height:1.5;color:var(--tx)}
+.fam{display:grid;gap:14px;margin-top:10px;text-align:left}
+@media(min-width:620px){.fam{grid-template-columns:1fr 1fr}}
+.box{border:2px solid var(--gr);border-radius:18px;padding:14px;background:var(--cream);color:#3b2218}
+.box .nm{color:var(--mar);font-weight:700;font-size:1.25em;line-height:1.5}
+.box p{margin:.65em 0;line-height:1.55}
 .ft{margin-top:26px;font-size:.9em}
-.hands{display:block;width:64px;height:auto;margin:14px auto 0}
+.hands{display:block;width:64px;height:64px;margin:14px auto 0}
 .accent{color:var(--ac);font-weight:700}
-@media (max-width:520px){h1{font-size:2.6em}}
+@media(max-width:520px){h1{font-size:2.6em}.border{padding-left:20px;padding-right:20px}}
 </style>
 </head>
 <body class="en">
 <div class="wrap">
-  <div class="bar"><button id="lg" type="button">தமிழ் / English</button></div>
+  <div class="bar"><button id="lg" type="button" aria-label="Switch language">தமிழ் / English</button></div>
   <div class="border">
     <div class="om ta">ஓம் சரவணபவ · முருகன் துணை</div>
     <div class="om en">Om Saravanabhava · Murugan Thunai</div>
 
-    <div class="arch">
-      <img alt="Lord Murugan" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQYIBQcGCA8QFhYQEBE5R0mGJg4kpCcnJycnJysxM0I0CkFHSQ2wNx4vH2wQ8/+EFi5TQJ5zwhxF6AANWZDK/VLJCaN0J9rvIKlM+JPnWbR+IYQn3/9k=">
+    <div class="arch" role="img" aria-label="Decorative illustration of Lord Murugan">
+      <svg viewBox="0 0 190 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="190" height="220" fill="#29351f"/>
+        <circle cx="95" cy="82" r="53" fill="#c49a46" opacity=".28"/>
+        <path d="M95 24 83 63l12-8 12 8z" fill="#f6e0a0" stroke="#ebd083" stroke-width="2"/>
+        <circle cx="95" cy="82" r="28" fill="#e8b66c"/>
+        <path d="M67 81q28-37 56 0v30H67z" fill="#9a3e2f"/>
+        <path d="M70 111q25-18 50 0l17 72H53z" fill="#d5a83d" stroke="#f6e0a0" stroke-width="3"/>
+        <path d="M57 183h76M66 194h58" stroke="#ebd083" stroke-width="4" stroke-linecap="round"/>
+        <path d="M38 176q-18-8-20 8 15 15 31 0M152 176q18-8 20 8-15 15-31 0" fill="#7d9a5e" stroke="#ebd083" stroke-width="2"/>
+        <circle cx="85" cy="82" r="2.5" fill="#38261a"/><circle cx="105" cy="82" r="2.5" fill="#38261a"/>
+        <path d="M88 94q7 6 14 0" fill="none" stroke="#7a2430" stroke-width="2" stroke-linecap="round"/>
+      </svg>
     </div>
 
     <div class="sm">ஸ்ரீராமஜெயம்</div>
@@ -68,13 +83,29 @@ h2{color:var(--ac);font-size:1.4em;margin:1.6em 0 .4em;border-bottom:1px solid v
     <div class="en">10:45 AM – 11:45 AM · Makara Lagnam</div>
     <div class="ta">காலை 10.45 மணிக்குமேல் 11.45 மணிக்குள் · மகர லக்னம்</div>
 
+    <h2><span class="en">The Families</span><span class="ta">இரு குடும்பங்கள்</span></h2>
+    <div class="fam">
+      <div class="box">
+        <div class="nm en">Chiranjeevi Rajaraman Sharma (Aswin)</div>
+        <div class="nm ta">சிரஞ்சீவி ராஜாராமன் சர்மா (எ) அஸ்வின்</div>
+        <p>Son of Viswanathan &amp; Padma Viswanathan.</p>
+        <p>Grandson of Seetharama Ganapadigal &amp; Sankari (Rayavaram, Pudukkottai), and Gurumurthy &amp; Alamelu (Thipparajapuram, Thanjavur).</p>
+      </div>
+      <div class="box">
+        <div class="nm en">Saubhagyavathi K.M. Rajameenakshi (Varsha)</div>
+        <div class="nm ta">சௌபாக்யவதி K.M. ராஜமீனாக்ஷி (எ) வர்ஷா</div>
+        <p>Daughter of M. Mahalingam &amp; M. Jayasri.</p>
+        <p>Granddaughter of K.S. Madanagopala Iyer &amp; Seethalakshmi (Kattuputhur), and R. Kalyana Krishnamurthy &amp; Gomathi (Kalanjeri Agraharam, Thanjavur).</p>
+      </div>
+    </div>
+
     <h2><span class="en">Venue</span><span class="ta">இடம்</span></h2>
     <div><b>Thamras Trust Mandapam</b></div>
     <div class="en">No. 11 &amp; 12, Sabari Road, Madipakkam, Chennai – 600091</div>
-    <div class="ta">தாம்ராஸ் டிரஸ்ட் மண்டபம், எண் 11&12 சபரி சாலை, மடிப்பாக்கம், சென்னை – 91</div>
+    <div class="ta">தாம்ராஸ் டிரஸ்ட் மண்டபம், எண் 11&amp;12 சபரி சாலை, மடிப்பாக்கம், சென்னை – 91</div>
     <div class="acts">
-      <a class="btn p" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Thamras+Trust+Mandapam+Sabari+Road+Madipakkam+Chennai">📍 <span class="en">Open in Maps</span><span class="ta">மூடு வரைபடம்</span></a>
-      <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aswin+%26+Varsha+Nichayathartham&dates=20261115T051500Z/20261115T061500Z&location=Thamras+Trust+Mandapam%2C+Sabari+Road%2C+Madipakkam%2C+Chennai">🗓️ <span class="en">Add to Calendar</span><span class="ta">நாட்காட்டியில் சேர்</span></a>
+      <a class="btn p" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Thamras+Trust+Mandapam+Sabari+Road+Madipakkam+Chennai">📍 <span class="en">Open in Maps</span><span class="ta">வரைபடத்தில் காண்க</span></a>
+      <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Aswin+%26+Varsha+Nichayathartham&amp;dates=20261115T051500Z/20261115T061500Z&amp;location=Thamras+Trust+Mandapam%2C+Sabari+Road%2C+Madipakkam%2C+Chennai">🗓️ <span class="en">Add to Calendar</span><span class="ta">நாட்காட்டியில் சேர்</span></a>
     </div>
 
     <div class="ft">
@@ -82,9 +113,19 @@ h2{color:var(--ac);font-size:1.4em;margin:1.6em 0 .4em;border-bottom:1px solid v
       <div class="ta">இப்படிக்கு</div>
       <div class="accent" style="font-size:1.3em"><span class="en">Viswanathan &amp; Padma Viswanathan</span><span class="ta">விஸ்வநாதன் · பத்மா விஸ்வநாதன்</span></div>
       <div class="sm" style="margin-top:8px">A-127, 4th Floor, A-Block, Travancore Residency,<br>Kavanoor Main Road, Kattankulathur – 603203, Chengalpattu District</div>
-      <img class="hands" alt="Namaskaram" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACyCAYAAAAH4YA5AABIMElEQVR42u19eZhcR3Xv71TV3bqne7pnRqstWbKsxZa8IYHBmCBhIAmYF+BFBkISwpoQ9iS8LEAkZYO8PBKWQF7ICaT8eeW1M34gHnRZl80qZYsM2DIPDSknuBw7r7Q7GtwWn0k1InY7WqJbQ2tVnXhVb0rDlJ7Nn8wcf4uJgjK4nx4n0iZ0wQ8gZ1/r3iQe9cB9qY5nQmB0y2nE3gZqQ4N5k1uTz2L8kHTkQ+4z6tH5l9I0I7k1aYSkJ3s3wM65PK/1ZQnPOjZqH86NQZvFy1lYJv7MsR5R5b7dU+3ysY8zZV2h1C6klTXk2PpXz3w4MqyQ3v7I0vX9w4VxPdMAt8vJa17+5bbQbT+vpyW3WnE3xTWEeW+gY6rF1i99f4ZtM0Gx2bAWRVb4YwQ9NNn9uI23OvX/9k=">
+      <svg class="hands" role="img" aria-label="Namaskaram" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 52 15 30q-1-5 3-6t6 4l4 7V14q0-5 4-5t4 5v19l4-8q2-4 5-2t1 6l-7 19q-2 6-8 6h-3q-4 0-6-2z" fill="#f6e0a0" stroke="#7a2430" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M32 13v20M26 35h13" stroke="#7a2430" stroke-width="2" stroke-linecap="round"/>
+      </svg>
     </div>
   </div>
 </div>
+<script>
+document.getElementById('lg').addEventListener('click',function(){
+  const tamil=document.body.classList.contains('en');
+  document.body.classList.toggle('en',!tamil);
+  document.body.classList.toggle('ta',tamil);
+});
+</script>
 </body>
 </html>
